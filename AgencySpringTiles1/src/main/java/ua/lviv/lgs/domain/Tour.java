@@ -28,6 +28,9 @@ public class Tour {
 	@Column (name="name")
 	private String date;
 	
+	//nokjkhnb
+	@Column (name="name")
+	private String hit;
 	
 	@ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "city")
 	@JoinTable( name="tour_city", joinColumns={@JoinColumn (name="tour_id")} ,
